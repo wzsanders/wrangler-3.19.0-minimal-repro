@@ -1,0 +1,14 @@
+name = "wrangler-minimal-repro"
+main = "src/index.ts"
+compatibility_date = "2023-07-22"
+compatibility_flags = [ "nodejs_compat" ]
+send_metrics = false
+
+[env.test]
+vars = { ENVIRONMENT = "test", CF_ZONE_NAME = "blank" }
+
+[env.dev]
+vars = { ENVIRONMENT = "dev", CF_ZONE_NAME = "blank" }
+
+[env.prod]
+vars = { ENVIRONMENT = "prod", CF_ZONE_NAME = "blank" }
